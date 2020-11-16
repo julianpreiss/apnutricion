@@ -1,0 +1,164 @@
+/* HEADER */
+
+h1{
+background: url('../imagenes/logo.png') no-repeat center;
+height: 77px;
+}
+
+#bannerprincipal {
+    background: url('../imagenes/baseball-tablet.png') no-repeat center;
+    margin: 0 1em;
+    width: calc(100vw - 2em);
+    height: calc((100vw - 2em) * 0.52717);
+    background-size: cover;
+}
+
+
+
+/* ==========
+      MAIN
+   ========== */
+
+
+
+main section:first-child div p {
+    box-sizing: border-box;
+    width: 85%;
+    margin: auto;
+}
+
+main section:first-child div {
+    margin-bottom: 20px;
+}
+
+.central h2 {
+    font-size: 4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 72px;
+}
+
+.central h2 span {
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+#infoprincipal p {
+    width: 80%;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+#infoprincipal :last-child {
+    padding-bottom:50px;
+}
+
+/* ===========
+    PASTILLAS
+   =========== */
+
+#pastillas {
+    background-color: #01002B;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 70px 60px 150px;
+    width: 100%;
+}
+
+#pastillas h2 {
+    font-size: 1.8125rem;
+    font-weight: 700;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    align-self: center;
+}
+
+#pastillas p {
+    width:150px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.2rem;
+}
+
+/* ===========
+     PLANES
+   =========== */
+
+#distintosplanes > div:nth-child(1) {
+    background: url('../imagenes/rugbier-tablet.jpg') no-repeat;
+    width: 90%;
+    max-width:717px;
+}
+
+#distintosplanes div:nth-child(2) {
+    background: url('../imagenes/boxer-tablet.jpg') no-repeat ;
+    width: 90%;
+    max-width:717px;
+}
+
+#distintosplanes div:nth-child(3) {
+    background: url('../imagenes/skate-tablet.jpg') no-repeat;
+    width: 90%;
+    max-width:717px;
+}
+
+#planes div div {
+    margin: 30px auto;
+    width:100%;
+}
+
+/* ===========
+   INFORMATIVA
+   =========== */
+
+   #informativa {
+    background-color: #01002B;
+    margin: 60px 0;
+    padding: 20px 0;
+    display: block;
+}
+
+#informativa h2 span {
+    color: #917700;
+}
+
+#informativa ul {
+    text-align: center;
+    margin: 10px auto;
+}
+
+#informativa ul li {
+    display: inline-block;
+    width: 90px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    vertical-align: top;
+    margin-right: 3%
+}
+
+#informativa ul li span {
+    font-size: 1.5rem;
+    display:block;
+}
+
+/*  ===========
+       VIDEO
+    =========== */
+
+#seccionvideo p {
+    margin: 10px auto 20px auto;
+    width:80%
+}
+
+
+/*  ===========
+    FORMULARIO
+    =========== */
+
+    input {
+        width: 80%;
+    }
+
+    form :nth-child(4) {
+        width:80%;
+    }

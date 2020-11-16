@@ -1,0 +1,201 @@
+
+#hamburguesa {
+    display: none;
+}
+
+nav {
+    position: static;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    width: 60%;
+}
+
+#barra {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    background:none;
+    margin: 0;
+    position: static;
+    display:flex;
+    align-items: center;
+}
+
+#barra li {
+    list-style: none;
+    margin: 1em;
+    width: 15%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#barra li a {
+    text-decoration: none;
+    display: block;
+    background:none;
+    text-align: center;
+    line-height: 1.2em;
+}
+
+header div:first-child  {
+    line-height: 0;
+    color: white;
+    text-align: left;
+    height:auto;
+}
+
+h1 {
+    background: url('../imagenes/logo.png') no-repeat center;
+    width: 203px;
+    height: 77px;
+    font-size: 0;
+    display: inline-block;
+    margin-left: 8vw;
+    margin-top: 2vh;
+    vertical-align: top;
+}
+
+#bannerprincipal {
+    background: url('../imagenes/baseball-pc.png') no-repeat center;
+    margin: 30px auto;
+    width: calc(100vw - 2em);
+    height: calc((100vw - 2em) * 0.474344);
+    background-size: cover;
+    max-width: 877px;
+    max-height: 416px;
+}
+
+#infoprincipal {
+    width:100%;
+}
+
+img{ 
+    width: 50vw;
+    height: auto;
+}
+
+.central {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1.5rem 0px;
+    display: block;
+}
+
+.derecha {
+    float: right; 
+}
+
+#infoprincipal h3 {
+    text-align: left;
+    width: 90%;
+    margin: 1.875rem 0 0 8vw;
+    line-height: 2.5rem;
+}
+
+#infoprincipal p {
+    margin: 0 0 0 8vw;
+    padding: 0; 
+    max-width: 80%;
+}
+
+#infoprincipal p:last-child {
+    margin-bottom: 30px;
+}
+
+/* ===========
+    PASTILLAS
+   =========== */
+
+   #pastillas {
+    background-color: #01002B;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100px 60px 150px;
+    width: 100%;
+    padding: 0 15%;
+}
+
+#pastillas h2 {
+    font-size: 3.5rem;
+}
+
+/* ===========
+     PLANES
+   =========== */
+
+   #distintosplanes > div:nth-child(1) {
+    background: url('../imagenes/rugbier-pc.jpg') no-repeat;
+    width: 90%;
+    max-width:749px;
+}
+
+#distintosplanes div:nth-child(2) {
+    background: url('../imagenes/boxer-pc.jpg') no-repeat ;
+    width: 90%;
+    max-width:749px;
+}
+
+#distintosplanes div:nth-child(3) {
+    background: url('../imagenes/skate-pc.jpg') no-repeat;
+    width: 90%;
+    max-width:749px;
+}
+
+#informativa h2 {
+    font-size: 2.3125rem;
+}
+
+#informativa ul  {
+    width: 80%;
+}
+
+#informativa ul li {
+    width: 170px;
+}
+
+#informativa ul li span {
+    font-size: 2.5rem;
+}
+
+/* ===========
+      VIDEO
+   =========== */
+
+#seccionvideo h2 {
+    font-size: 2.5rem;
+}
+
+#seccionvideo p {
+    width: 50%;
+    margin: 20px auto;
+}
+
+
+/* ============
+    FORMULARIO
+   ============ */
+
+#formulario {
+    width: 90%;
+    margin: 30px auto 0 auto;
+}
+
+input, form :nth-child(4) {
+    width: 50%;
+}
+
+#formulario div span:nth-child(3) {
+    display:inline-block;
+}
+
+#formulario div {
+    background:#01002B url('../imagenes/siluetabasket-desktop.png') no-repeat 50% 20%;
+}
+
+form p {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    padding-top: 30px;
+}

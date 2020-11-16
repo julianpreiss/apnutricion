@@ -1,0 +1,449 @@
+*, *:before, *:after {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+strong, em {
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+}
+
+nav ul li a {
+	padding: auto 10px; 
+	display:block;
+    text-decoration:none;
+    font-weight: 500;
+	}
+
+section {
+    width:100%;
+}
+
+footer {
+    width: 100%;
+}
+
+p {
+    width:100%;
+    padding:10px 1em;
+    font-size:1em;
+    font-weight: 300;
+}
+
+
+/* ==============
+       MOBILE
+   ============== */
+   img {
+    width: 100%;
+    padding: 0 1em;
+}
+
+
+/* ==============
+       HEADER
+   ============== */
+
+header {
+    width:100%;
+    overflow: hidden;
+}
+
+header div:first-child  {
+    height: 4em;
+    line-height: 4em;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    background: url('../imagenes/logo-mobile.png') no-repeat center;
+    width: 100vw;
+    height: 65px;
+    text-align: center;
+    font-size: 0;
+    line-height: 16px;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#hamburguesa li {
+    list-style: none;
+    text-indent: -100px;
+    overflow: hidden;
+    width: 2.5em;
+    margin-left: 1em;
+}
+
+#hamburguesa li a {
+    background: url('../imagenes/menu.png') no-repeat center;
+    line-height: 65px;
+    display: block;
+    height: 65px;
+}
+
+#hamburguesa li:last-child {
+    display: none;
+}
+
+nav:target #barra {
+    height: calc(100vh - 4em);
+}
+
+nav:target #hamburguesa li:first-child {
+    display: none;
+}
+
+nav:target #hamburguesa li:last-child {
+    display: block;
+}
+
+#barra {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 4em;
+    background:hsla(242, 100%, 13%, 0.85);
+    transition: height .5s ease;
+}
+
+#barra li {
+    list-style: none;
+    margin: 1em;
+    width: 90%;
+    display: inline-block;
+}
+
+#barra li a {
+    text-decoration: none;
+    display: block;
+    background: rgb(0, 70, 161);
+    color: white;
+    text-align: center;
+    line-height: 2em;
+}
+
+#bannerprincipal {
+    background: url('../imagenes/baseball-mobile.png') no-repeat center;
+    margin: 0 1em;
+    width: calc(100vw - 2em);
+    height: calc((100vw - 2em) * 0.52717);
+    background-size: cover;
+}
+
+header p {
+    display:none;
+}
+
+/* ==========
+      MAIN
+   ========== */
+
+
+h2, h3{
+    text-align: center;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.central h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 72px;
+}
+
+.central h2 span {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.8125rem;
+}
+
+h3 span {
+    color: #003399;
+    font-size: 2.1875rem;
+}
+
+/* ==========================
+    PASTILLAS DE INFORMACION
+   ========================== */
+
+#pastillas {
+    background-color: #01002B;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10vh 60px 1fr 60px 1fr;
+    height: auto;
+    width: 100%;
+}
+
+#pastillas h2 {
+    font-size: 1.8125rem;
+    font-weight: 700;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-self: center;
+}
+
+#pastillas :nth-child(2){
+    background: url('../imagenes/tenis-mobile.png') no-repeat center;
+}
+
+#pastillas :nth-child(3){
+    background: url('../imagenes/basket-mobile.png') no-repeat center;
+}
+
+#pastillas :nth-child(4){
+    background: url('../imagenes/gym-mobile.png') no-repeat center;
+}
+
+#pastillas :nth-child(5){
+    background: url('../imagenes/running-mobile.png') no-repeat center;
+}
+
+#pastillas :nth-child(6){
+    grid-row-start: 3;
+}
+
+#pastillas :nth-child(7){
+    grid-row-start: 3;
+}
+
+#pastillas p {
+    width:90%;
+    text-align: center;
+    margin: 0px auto 25px auto;
+}
+
+/* ==========
+     PLANES
+   ========== */
+
+#planes h2 {
+    margin-top: 50px;
+}
+
+#planes p {
+    font-size: 14px;
+    padding:5px 1rem 0 1rem;
+}
+
+#planes h3 {
+    padding:0 1rem;
+    text-align: left;
+    width:100%;
+    margin: 0 auto;
+}
+
+#distintosplanes > div:nth-child(1) {
+    background: url('../imagenes/rugbier-mobile.jpg') no-repeat;
+}
+
+#distintosplanes div:nth-child(2) {
+    background: url('../imagenes/boxer-mobile.jpg') no-repeat ;
+    width: 100%
+}
+
+#distintosplanes div:nth-child(3) {
+    background: url('../imagenes/skate-mobile.jpg') no-repeat;
+    width: 100%
+}
+
+#planes div {
+    margin-top: 30px;
+    width:100%;
+}
+
+#planes div h3, #planes div a {
+    color: #917700;
+}
+
+#distintosplanes div div {
+    background: hsla(242, 100%, 13%, 0.85);
+
+}
+
+#planes div div a {
+    display: block;
+    text-align: right;
+    margin-right: 25px;
+    padding-bottom: 10px;
+}
+
+#planes div div div :first-child {
+    font-weight:400;
+    font-size: 1.1rem;
+}
+
+
+
+/* ===========
+   INFORMATIVA
+   =========== */
+
+#informativa {
+       display: none;
+   }
+
+/* ===========
+      VIDEO
+   =========== */
+
+
+#seccionvideo h2 {
+    font-weight: 200;
+   }
+
+#seccionvideo h2 span{
+    font-weight: 600;
+}
+
+#figurevideo iframe {
+       border: 0;
+       width: 100%;
+       height: 100%; 
+       margin: auto;   
+   }
+
+#figurevideo {
+    width: 90vw;
+    height: calc(90vw * 315 / 560);
+    margin: 0 auto;
+    max-width: 560px;
+    max-height: 315px;
+}
+
+/* ============
+    FORMULARIO
+   ============ */
+
+#formulario div {
+    background:#01002B url('../imagenes/siluetabasket.png') no-repeat 50% 20%;
+    height: 470px;
+}
+
+form p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 60px;
+}
+
+input, textarea {
+    display: block;
+    width: 90%;
+    margin: 15px auto;
+    height: 40px;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+textarea {
+    height: 80px;
+}
+
+form :nth-child(4) {
+    margin: 15px auto;
+    font-family: 'Poppins';
+    font-weight: 500;
+    width:90%;
+}
+
+::placeholder {
+    font-size: 1.2em;
+    line-height: 40px;
+    padding-left: 10px;
+}
+
+
+form input:last-of-type {
+    background-color: #FBB03B;
+    color: black;
+    border: none;
+}
+
+form :nth-child(5) {
+    margin-top: 20px;
+}
+
+#formulario div span:last-child {
+    display: none;
+}
+
+#formulario div span:nth-child(2) {
+    position: relative;
+    text-align: right;
+    display: block;
+    top: 30px;
+    width: 90%;
+    margin: 0 auto;
+    font-weight: 200;
+}
+
+/* ============
+      FOOTER
+   ============ */
+
+footer ul {
+    text-align: center;
+}
+
+footer ul li {
+    display: inline-block;
+    width: 73px;
+    height:73px;
+    margin: 0 5px;
+}
+
+footer ul li a {
+    font-size: 0;
+    width: 73px;
+    height: 73px;
+    display:inline-block;
+    font-size: 0;
+    vertical-align: top;
+}
+
+footer span:first-of-type {
+    font-size: 1em;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+}
+
+#insta {
+    background: url('../imagenes/insta.png');
+}
+
+#fb {
+    background: url('../imagenes/fb.png');
+}
+
+#tw {
+    background: url('../imagenes/tw.png');
+}
+
+footer p {
+    text-align: center;
+}
